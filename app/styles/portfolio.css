@@ -1,0 +1,84 @@
+.portfolio-container {
+    min-height: calc(100vh - 80px);
+    padding: 2rem;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: var(--background);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .portfolio-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text);
+  }
+  
+  .project {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background-color: var(--card-bg);
+    box-shadow: var(--navbar-shadow);
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-image-wrapper {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  
+  /* Dark theme support */
+  @media (prefers-color-scheme: dark) {
+    .project {
+      background-color: var(--card-dark-bg);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .portfolio-container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .portfolio-title {
+      font-size: 2rem;
+    }
+  
+    .project-title {
+      font-size: 1.25rem;
+    }
+  
+    .project-description {
+      font-size: 0.95rem;
+    }
+  }
+  
